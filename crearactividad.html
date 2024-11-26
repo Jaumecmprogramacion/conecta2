@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Registro</title>
+    <link rel="StyleSheet" href="estilo.css">
+</head>
+<body>
+    <div id="logo">
+        <img src="img/logo2.jpg">
+        </div>
+    
+         <nav>
+            <a href="index.php"> <b>Inicio</b></a>
+        <a href="actividades.php"> <b>Actividades disponibles</b></a>
+        <a href="crearactividad.html"> <b>Crear actividad</b></a>
+        <a href="paneldecontrol.php"> <b>Panel de control</b></a>
+        <a href=""> <b>Enlaces de interes</b></a>
+       
+    </nav>
+  
+    
+<h2>Crear actividad</h2>
+
+<form action="crearactividad.php" method="POST">
+    <label for="titulo"><b>Titulo:</b></label>
+    <input type="text" id="titulo" name="titulo" required>
+    <label for="nombre"><b>Creado por:</b></label>
+    <input type="text" id="nombre" name="creador" required>
+
+    <label for="fecha"><b>Fecha:</b></label>
+    <input type="text" id="fecha" name="fecha" required>
+
+    <label for="hora"><b>Hora:</b></label>
+    <input type="hora" id="hora" name="hora" required>
+
+    <label for="direccion"><b>Dirección:</b></label>
+    <input type="tel" id="telefono" name="direccion" required>
+
+   <label for="duracion"><b>Duración aproximada:</b></label>
+    <input type="text" id="duracion" name="duracion" required>
+    
+    <label for="descripcion"><b>Descripción:</b></label>
+    <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+
+    <input type="submit" value="Enviar">
+       

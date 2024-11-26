@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Ventanas 3x2 y Menú Superior</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-rows: auto 1fr;
+            grid-template-columns: repeat(3, 1fr);
+            height: 100vh;
+            font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            grid-row: 1 / 2;
+            grid-column: 1 / -1;
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #007bff;
+        }
+
+        .window {
+            border: 2px solid #333;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #window1 {
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+        }
+
+        #window2 {
+            grid-row: 2 / 3;
+            grid-column: 2 / 3;
+        }
+
+        #window3 {
+            grid-row: 2 / 3;
+            grid-column: 3 / 4;
+        }
+
+        #window4 {
+            grid-row: 3 / 4;
+            grid-column: 1 / 2;
+        }
+
+        #window5 {
+            grid-row: 3 / 4;
+            grid-column: 2 / 3;
+        }
+
+        #window6 {
+            grid-row: 3 / 4;
+            grid-column: 3 / 4;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Menú Superior</h1>
+    </header>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Categoría 1</a>
+        <a href="#">Categoría 2</a>
+        <a href="#">Categoría 3</a>
+        <a href="#">Contacto</a>
+    </nav>
+    <div id="window1" class="window">
+        <h2>Ventana 1</h2>
+        <!-- Contenido de la primera ventana -->
+    </div>
+    <div id="window2" class="window">
+        <h2>Ventana 2</h2>
+        <!-- Contenido de la segunda ventana -->
+    </div>
+    <div id="window3" class="window">
+        <h2>Ventana 3</h2>
+        <!-- Contenido de la tercera ventana -->
+    </div>
+    <div id="window4" class="window">
+        <h2>Ventana 4</h2>
+        <!-- Contenido de la cuarta ventana -->
+    </div>
+    <div id="window5" class="window">
+        <h2>Ventana 5</h2>
+        <!-- Contenido de la quinta ventana -->
+    </div>
+    <div id="window6" class="window">
+        <h2>Ventana 6</h2>
+        <!-- Contenido de la sexta ventana -->
+    </div>
+</body>
+</html>
